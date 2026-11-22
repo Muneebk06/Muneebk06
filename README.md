@@ -1,27 +1,33 @@
-![Muneeb Ur Rehman • Computer vision and Earth observation • animated terrain scan](./assets/field-console.gif)
+# Muneeb Ur Rehman
 
-**[LinkedIn ↗ muneeb-ur-rehman-ai](https://www.linkedin.com/in/muneeb-ur-rehman-ai/)**　·　[Email Muneeb](mailto:Mk6821860@gmail.com)
+**AI undergraduate · BIIT, Rawalpindi · CGPA 3.96/4.00**  
+**[LinkedIn ↗](https://www.linkedin.com/in/muneeb-ur-rehman-ai/)**　·　[Email me](mailto:Mk6821860@gmail.com)
 
-I'm Muneeb, an AI undergraduate at BIIT in Rawalpindi (CGPA **3.96/4.00**). My first attendance model needed a full retrain every time someone joined the class. Fixing that got me interested in what happens after a model leaves the notebook. These days I work with faces, satellite images, and the software that makes their predictions useful.
+![Pixel-art illustration of a student at a computer vision workstation in Rawalpindi](assets/vision-lab.gif)
 
-## ▸ Featured mission · Resilience Nexus
+## ▸ Featured build　/　[BIIT Vision OS](https://github.com/Muneebk06/biit-vision-os)
 
-**How much of this satellite patch is forest?** Pick a district, open a Landsat patch, and compare the RGB image with the predicted canopy overlay. The same application lets you adjust a flood alert threshold and see which stations change status.
+My first attendance model had a problem on day one of a new class. Every time a student joined, I had to retrain the classifier. In BIIT Vision OS, enrolling a student means saving a **128-dimensional face embedding**. The model can stay exactly as it is.
 
-| Forest segmentation | Coverage | My role |
-| --- | --- | --- |
-| **64.73% mIoU** on 187 held-out patches | **1,162** patches across **17** districts | Built the forest pipeline, FastAPI backend, interface, and PDF/CSV exports |
+**What happens at the camera?** MobileNetV2 produces an embedding for each detected face. The app compares it with enrolled students, labels weak matches *Unknown*, and takes a vote across ten frames before recording attendance. A 30-second cooldown keeps the same student from being marked twice in quick succession.
 
-I combined ResSE-UNet and LightGBM for the forest masks. My teammate Abdullah contributed the trained flood model.
+`MobileNetV2`　`Triplet loss`　`OpenCV`　`Firebase`
 
-**[Open Resilience Nexus →](https://github.com/Muneebk06/Resilience-Nexus)**
+**[Explore BIIT Vision OS →](https://github.com/Muneebk06/biit-vision-os)**
 
-## ▸ Select a project
+## ▸ Cartridge shelf
 
-| Project | An engineering decision I made |
-| --- | --- |
-| [BIIT Vision OS](https://github.com/Muneebk06/biit-vision-os) | Replaced the fixed student classifier with MobileNetV2 embeddings. Enrolling someone now adds a face vector. A vote across ten frames stabilizes the attendance decision. |
-| [YouTube AI Research Agent](https://github.com/Muneebk06/Youtube-ai-research-Ai-agent) | Repeated transcript requests were eating into the daily token budget. I added caching so follow-up questions can reuse material the agent already retrieved. |
-| [Retail Inventory](https://github.com/Muneebk06/CSharp-SQL-Retail-Inventory) | Kept stock updates in SQL Server so the C# desktop app and its reports use the same inventory records. |
+[![YouTube Research Agent — transcript explorer](assets/youtube-cartridge.svg)](https://github.com/Muneebk06/Youtube-ai-research-Ai-agent)
 
-**Tools I use**　Python · TensorFlow · OpenCV · LightGBM · FastAPI · LangChain · SQL
+Follow-up questions kept fetching the same video transcript. I added a cache so the agent could spend its token budget on the next question.  
+`LangChain` · `Groq` · `FastAPI` · `Streamlit`
+
+[![Resilience Nexus — Earth observation](assets/nexus-cartridge.svg)](https://github.com/Muneebk06/Resilience-Nexus)
+
+A team competition project for exploring forest cover and flood predictions across 17 districts. The forest model reached **64.73% mIoU on 187 held-out patches**. Abdullah contributed the trained flood model.  
+`Landsat` · `TensorFlow` · `LightGBM`
+
+[![Retail Inventory — desktop systems](assets/retail-cartridge.svg)](https://github.com/Muneebk06/CSharp-SQL-Retail-Inventory)
+
+A shop records a sale once. SQL Server handles the stock change, and the desktop app reads the updated inventory for its reports.  
+`C#` · `WinForms` · `SQL Server`
