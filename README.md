@@ -1,6 +1,6 @@
 # Muneeb Ur Rehman
 
-**AI undergraduate · BIIT, Rawalpindi · CGPA 3.96/4.00**  
+**AI undergraduate · BIIT, Rawalpindi · CGPA 3.94/4.00**  
 **[LinkedIn ↗](https://www.linkedin.com/in/muneeb-ur-rehman-ai/)**　·　[Email me](mailto:Mk6821860@gmail.com)
 
 ![Pixel-art illustration of a student at a computer vision workstation in Rawalpindi](assets/vision-lab.gif)
